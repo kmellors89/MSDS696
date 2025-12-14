@@ -4,6 +4,7 @@ For my Practicum 2, I set out to explore biases and disparities in crime punishm
 My dataset was built by merging three datasets from the U.S. Sentencing Commission, Data.gov, and the University of Michigan. Combined, they made a dataset of slightly more than 100,000 entries. After heavy cleaning, handling duplicates, standardizing inconsistent columns, and dropping features with little-to-value or data, I ended with 23 usable features, falling into two categories: crime-based features (like sentencing lengths, number of crimes, prior history) and demographic features (race, gender, citizenship, age, education level, dependents).
 
 Figure 1: NULLs 
+
 ![alt text](nulls.png)
 
 One of the most important, but unfortunately most incomplete, features was crime severity, which was missing in nearly 80% of entries. That meant, I had to drop it. Dropping crime severity makes it impossible to directly compare crime severity with crime punishment severity, which would have been the strongest way to detect bias. Even without that comparison, however, the data itself clearly showed demographic disparities. The majority of individuals were between 22 and 40 years old, male (roughly 80%), and heavily represented by Black and Hispanic individual. I also found disproportionate educational levels, which often track with broader inequities within policing and prosecution.
